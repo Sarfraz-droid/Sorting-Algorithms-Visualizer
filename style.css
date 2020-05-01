@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.col-1-3 {
+  width: 30%;
+}
+.pt-1 {
+  padding-top: 1rem;
+}
+.pr-1 {
+  padding-right: 1rem;
+}
+.pb-1 {
+  padding-bottom: 1rem;
+}
+.pl-1 {
+  padding-left: 1rem;
+}
+.center {
+  text-align: center;
+}
+.left {
+  float: left;
+}
+.blue {
+  color: #1f73b7;
+}
+.red {
+  color: #ea4335;
+}
+body {
+  background-color: #fff;
+}
+.black {
+  color: #212529;
+}
+
+nav {
+  height: 3.5rem;
+  width: 100%;
+  background-color: #343a40;
+}
+nav .logo  {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  line-height: 3.5rem;
+  padding-left: 10rem;
+}
+.container {
+  height: calc(100vh - 10rem);
+}
+.row {
+  width: 100%;
+  display: inline-block;
+}
+
+
+input[type=range]{
+  width: 100%;
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 500px;
+  height: 4px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background:#1f73b7;
+  margin-top: -4px;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+}
+.algos {
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: #fff;
+  border-radius: .25rem;
+  background-color: #1f73b7;
+  outline: none;
+
+  font-family: inherit;
+}
+.canvas {
+  border: .1rem solid #ececec;
+  width: 100%;
+  border-radius: .2rem;
+  height: 30rem;
+
+}
+.canvas canvas{
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+button {
+  border-color: transparent;
+  background-color: #1f73b7;
+  color: #fff;
+  -webkit-transition: border-color .25s ease-in-out,box-shadow .1s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out;
+  transition: border-color .25s ease-in-out,box-shadow .1s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out;
+  margin: 0;
+  border: 1px solid #5293c7;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0 1.92857em;
+  min-width: 8.57143em;
+  text-overflow: ellipsis;
+  line-height: 38px;
+  white-space: nowrap;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+button:hover {
+  border-color: transparent;
+  background-color: #5293c7;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+@media (max-width: 400px) {
+  .container {
+      padding: 1rem  .5rem 0 .5rem;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+      padding: 1rem  1rem 0 1rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+      padding: 1rem  10rem 0 10rem;
+  }
+}
