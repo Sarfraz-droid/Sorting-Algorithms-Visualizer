@@ -1,45 +1,55 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Sorting Algorithms Visualisation</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-    <nav>
-      <a href="#" class="logo">Sorting Algorithms Visualization</a>
-    </nav>
-    <div class="container">
-      <div class="row">
-        <select class="algos left col-1-3"  id="algos">
-          <option value="sort-1">Bubble Sort</option>
-          <option value="sort-2">Insertion Sort</option>
-          <option value="sort-3">Selection Sort</option>
-          <option value="sort-4">Quick Sort</option>
-          <option value="sort-5" selected>Merge Sort</option>
-        </select>
-        <div class="pl-1 left col-1-3">
-          <p class="blue center">animation delay <b class="red" id="speed-txt">(100ms)</b></p>
-          <input type="range" name="speed" id="speed" step="1" value="100" min="1" max="1000">
-        </div>
-        <div class="pl-1 left col-1-3">
-          <p class="blue center">number of elements <b class="red" id="number-txt">(100)</b></p>
-          <input type="range" name="number" id="number" step="1" value="100" min="1" max="450">
-        </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sorting Algorithms Visualizer</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <nav>
+    <a href="#" class="logo">Sorting Algorithms Visualizer</a>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <select class="algos left col-1-3" id="algos">
+        <option value="sort-1">Bubble Sort</option>
+        <option value="sort-2">Insertion Sort</option>
+        <option value="sort-3">Selection Sort</option>
+        <option value="sort-4">Quick Sort (broken animation)</option>
+        <option value="sort-5" selected>Merge Sort (broken animation)</option>
+      </select>
+      <div class="pl-1 left col-1-3">
+        <p class="blue center">animation delay <b class="red" id="speed-txt">(500ms)</b></p>
+        <input type="range" name="speed" id="speed" step="1" value="500" min="1" max="1000">
       </div>
-      <div class="row pt-1">
-        <div class="canvas">
-          <canvas id="canvas" width="1000" height="510" ></canvas>
-        </div>
-      </div>
-      <div class="row pt-1 center">
-        <button type="button" name="button"  id="gen-btn">Generate</button>
-        <button type="button" name="button"  id="start-btn">Run</button>
-        <button type="button" name="button" id="stop-btn">Stop</button>
-        <button type="button" name="button" id="reset-btn">Reset</button>
+      <div class="pl-1 left col-1-3">
+        <p class="blue center">number of elements <b class="red" id="number-txt">(150)</b></p>
+        <input type="range" name="number" id="number" step="1" value="50" min="1" max="500">
       </div>
     </div>
-    <script src="./app.js"></script>
-  </body>
+    <div class="row pt-1">
+      <div class="canvas">
+        <canvas id="canvas" width="1000" height="550"></canvas>
+      </div>
+    </div>
+    <div class="row pt-1 center">
+      <button type="button" name="button" id="gen-btn">Generate</button>
+      <button type="button" name="button" id="start-btn">Run</button>
+      <button type="button" name="button" id="stop-btn">Stop</button>
+      <button type="button" name="button" id="reset-btn">Reset</button>
+      <button type="button" name="button" id="desc-btn">Description</button>
+    </div>
+  </div>
+  <div class="popup">
+    <div class="content">
+      <p class="desc">Lorem</p>
+    </div>
+    <div class="close">X</div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+
 </html>
